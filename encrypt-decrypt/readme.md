@@ -87,15 +87,15 @@ The EncryptFile method does the following:
 
 The encryption package uses the following format:
 
-•	Key length, bytes 0 - 3
-•	IV length, bytes 4 - 7
-•	Encrypted key
-•	IV
-•	Cipher text
+* Key length, bytes 0 - 3
+* IV length, bytes 4 - 7
+* Encrypted key
+* IV
+* Cipher text
 
 You can use the lengths of the key and IV to determine the starting points and lengths of all parts of the encryption package, which can then be used to decrypt the file.
 
-1.	Add the following code as the Click event handler for the Encrypt File button (buttonEncryptFile_Click).
+1. Add the following code inside the Click event handler for the Encrypt File button (buttonEncryptFile_Click).
 
 ```cs
  if (rsa == null)
@@ -118,9 +118,12 @@ You can use the lengths of the key and IV to determine the starting points and l
                 }
             }
 
-2.	Add EcryptFile Method to Form.cs
+```
+ 
+ 
+2. Add EcryptFile Method to Form.cs
 
-
+```cs
 // Create instance of Rijndael for
             // symetric encryption of the data.
             RijndaelManaged rjndl = new RijndaelManaged();
@@ -216,7 +219,7 @@ The Decrypt method does the following:
 • Uses a CryptoStream object to read and decrypt the cipher text section of the FileStreamencryption package, in blocks of bytes, into the FileStream object for the decrypted file. When this is finished, the decryption is completed.
 
 
-1. Add the following code as the Click event handler for the Decrypt File button.
+1. Add the following code inside the Click event handler for the Decrypt File button.
 
 ```cs
 if (rsa == null)
@@ -236,9 +239,10 @@ if (rsa == null)
             }
         }
     }
+```
 
-1.	Add the following DecryptFile Method to Form.cs
-
+2. Add the following DecryptFile Method to Form.cs
+```cs
 private void DecryptFile(string inFile)
 {
 
@@ -351,7 +355,7 @@ This task saves the key created by the Create Keys button to a file. It export
 
 This task simulates the scenario of Alice giving Bob her public key so that he can encrypt files for her. He and others who have that public key will not be able to decrypt them because they do not have the full key pair with private parameters.
 
-1.	Add the following code as the Click event handler for the Export Public Key button (buttonExportPublicKey_Click).
+1. Add the following code as the Click event handler for the Export Public Key button (buttonExportPublicKey_Click).
 
 ```cs
     // Save the public key created by the RSA
@@ -392,7 +396,8 @@ This task sets the key container name to the name of the key created by using th
 
 1.	Add the following code as the Click event handler for the Get Private Key button (buttonGetPrivateKey_Click).
 
-cspp.KeyContainerName = keyName;
+```cs
+	    cspp.KeyContainerName = keyName;
 
             rsa = new RSACryptoServiceProvider(cspp);
             rsa.PersistKeyInCsp = true;
@@ -401,9 +406,7 @@ cspp.KeyContainerName = keyName;
                 label1.Text = "Key: " + cspp.KeyContainerName + " - Public Only";
             else
                 label1.Text = "Key: " + cspp.KeyContainerName + " - Full Key Pair";
-
-
-
+```
 
 
 ## Testing the Application
@@ -426,11 +429,9 @@ NOTE:  Locate \Begin\Output folder and make sure it has following folders inside
 
 4.	Click the Encrypt File button and select the file \Begin\Output\Docs\samplefile.txt. Also, examine the content of encrypted file saved in the folder \Begin\Output\Encrypt\samplefile.enc 
 
-5.	Click the Decrypt File button and select the file just encrypted i-e samplefile.enc
+5. Click the Decrypt File button and select the file just encrypted i-e samplefile.enc. Examine the file just decrypted. The decrypted file is located at \Begin\Output\Decrypt\samplefile.txt 
 
-Examine the file just decrypted. The decrypted file is located at \Begin\Output\Decrypt\samplefile.txt 
-
-6.	Close the application and restart it to test retrieving persisted key containers in the next scenario.
+5. Close the application and restart it to test retrieving persisted key containers in the next scenario.
 
 ###Encrypt using the Public key
 
@@ -442,7 +443,7 @@ This scenario demonstrates having only the public key to encrypt a file for anot
 
 3.	Click the Decrypt File button and select the file just encrypted i-e samplefile.enc. This will fail with an exception because you must have the private key to decrypt.
 
-7.	Close the application and restart it to test persisted private key in the next scenario.
+4.	Close the application and restart it to test persisted private key in the next scenario.
 
 ###Decrypt using the Private key
 
