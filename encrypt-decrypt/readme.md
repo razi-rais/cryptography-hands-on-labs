@@ -16,6 +16,8 @@ After completing this lab, you will be able to:
 
 •	Use the RSACryptoServiceProvider, an asymmetric algorithm, to encrypt and decrypt the key to the data encrypted by RijndaelManaged.  
 
+![Application](https://raw.githubusercontent.com/razi-rais/cryptography-hands-on-labs/master/encrypt-decrypt/Screen%20Shot%202016-07-07%20at%208.22.59%20PM.png)
+
 ##Prerequisites
 You must have the Visual Studio 2013 (or above) installed on the machine.  
 
