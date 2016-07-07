@@ -425,7 +425,7 @@ NOTE:  Locate \Begin\Output folder and make sure it has following folders inside
 
 2.	Click the Create Keys button. The label displays the key name and shows that it is a full key pair.
 
-3.	Click the Export Public Key button. Note that exporting the public key parameters does not change the current key. Examine the public key created at <LabSourceDirectory>\Cryptography\Begin\Output\Encrypt\rsaPublicKey.txt
+3.	Click the Export Public Key button. Note that exporting the public key parameters does not change the current key. Examine the public key created at \Begin\Output\Encrypt\rsaPublicKey.txt
 
 4.	Click the Encrypt File button and select the file \Begin\Output\Docs\samplefile.txt. Also, examine the content of encrypted file saved in the folder \Begin\Output\Encrypt\samplefile.enc 
 
