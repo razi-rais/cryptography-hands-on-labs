@@ -1,0 +1,10 @@
+C:\Users\Super\Desktop\Cryptography\Begin\bin\Debug\Cryptography.exe.config
+C:\Users\Super\Desktop\Cryptography\End\bin\Debug\Cryptography.exe.config
+C:\Users\Super\Desktop\Cryptography\End\bin\Debug\Cryptography.exe
+C:\Users\Super\Desktop\Cryptography\End\bin\Debug\Cryptography.pdb
+C:\Users\Super\Desktop\Cryptography\End\obj\Debug\Encryption_Decryption.csprojResolveAssemblyReference.cache
+C:\Users\Super\Desktop\Cryptography\End\obj\Debug\Cryptography.Form1.resources
+C:\Users\Super\Desktop\Cryptography\End\obj\Debug\Cryptography.Properties.Resources.resources
+C:\Users\Super\Desktop\Cryptography\End\obj\Debug\Encryption_Decryption.csproj.GenerateResource.Cache
+C:\Users\Super\Desktop\Cryptography\End\obj\Debug\Cryptography.exe
+C:\Users\Super\Desktop\Cryptography\End\obj\Debug\Cryptography.pdb
