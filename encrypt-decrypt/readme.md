@@ -9,6 +9,9 @@ This walkthrough uses the following guidelines for encryption:
 
 •	Use the RSACryptoServiceProvider, an asymmetric algorithm, to encrypt and decrypt the key to the data encrypted by RijndaelManaged Asymmetric algorithms are best used for smaller amounts of data, such as a key.
 
+####NOTE: 
+This lab leverage MSDN article avaiallbe at: https://msdn.microsoft.com/en-us/library/bb397867(v=vs.110).aspx. Did some bug fixes along with few edits to make it fully functional. The orignal MSDN article is not availale to fork/update.
+
 ##Objectives 
 After completing this lab, you will be able to:
 
